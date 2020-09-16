@@ -18,7 +18,7 @@ def collect_files(filenames,dirname, gray=False, size=None):
             img = transform.resize(img, size)
         Xtmp.append(img)
     return (Xtmp, Ytmp)
-def loadimgdataset(pathmaindir : str, codlabels='ohe', gray=False, size=None, parallel=False):
+def loadimgdataset(pathmaindir : str, codlabels :str = 'ohe', gray :bool = False, size :tuple = None, parallel :bool = False):
     encoder = None
     X = []
     Y = []
